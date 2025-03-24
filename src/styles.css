@@ -17,7 +17,7 @@
   height: 100%;
   padding: 0 2rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -26,9 +26,10 @@
   font-size: 1.5rem;
   font-weight: bold;
   background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
+  margin-left: 20px;
 }
 
 .logo:hover {
@@ -39,9 +40,10 @@
   display: flex;
   align-items: center;
   list-style: none;
-  margin-right: 60px;
+  margin-right: 70px;
   padding: 0;
   gap: 3rem;
+  justify-content: flex-end;
 }
 
 .nav-item {
@@ -146,7 +148,8 @@ section:nth-child(even) {
 .contact-form {
   width: 100%;
   max-width: 800px;
-  margin: 100px auto 2rem auto;  /* changed from: margin: 2rem auto; */
+  margin: 100px auto 2rem auto;
+  /* changed from: margin: 2rem auto; */
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
@@ -202,7 +205,7 @@ section:nth-child(even) {
   padding: 1rem;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
+  background: linear-gradient(45deg, #2b5fda, #7330e0);
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -212,17 +215,18 @@ section:nth-child(even) {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+  background: linear-gradient(45deg, #8E54E9, #4776E6);
+  box-shadow: 0 7px 25px rgba(142, 84, 233, 0.3);
 }
 
 /* Contact Section Specific Styles */
 #contact {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 #contact h2 {
-    margin-bottom: 40px;
-    text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,12 +234,12 @@ section:nth-child(even) {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .form-group,
   .form-row .form-group {
     width: 100%;
   }
-  
+
   .form-row .form-group {
     width: 100%;
     margin-bottom: 0;
@@ -251,15 +255,206 @@ footer {
   background: linear-gradient(45deg, #2d3436 0%, #000000 100%);
 }
 
+/* Modern Footer Styles */
+.footer {
+  background: linear-gradient(45deg, #1a1a1a, #070707);
+  color: #ffffff;
+  padding: 4rem 2rem 2rem 2rem;
+  position: relative;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  padding: 1rem;
+}
+
+.footer-section h3 {
+  color: #6c5ce7;
+  /* color: #ce23a3; */
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  position: relative;
+  /* text-align: center; */
+  margin-left: -30px;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 350px;
+  height: 2px;
+  background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section i {
+  color: #6c5ce7;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.9rem;
+  margin-top: 1rem;
+  transform: translateX(-10px);
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+/* Brand-specific colors for social icons */
+.social-links a[href*="github"] i {
+  color: #333;
+}
+
+.social-links a[href*="linkedin"] i {
+  color: #0077b5;
+}
+
+.social-links a[href*="wa.me"] i {
+  color: #25D366;
+}
+
+.social-links a[href*="twitter"] i {
+  color: #1da1f2;
+}
+
+.social-links a[href*="facebook"] i {
+  color: #0658f1;
+}
+
+.social-links a[href*="youtube"] i {
+  color: #ff0000c0;
+}
+
+/* Hover effect - only scale transform */
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Remove the old hover color changes since colors are now permanent */
+.social-links a[href*="github"]:hover i,
+.social-links a[href*="linkedin"]:hover i,
+.social-links a[href*="wa.me"]:hover i,
+.social-links a[href*="twitter"]:hover i,
+.social-links a[href*="facebook"]:hover i,
+.social-links a[href*="youtube"]:hover i {
+  /* Remove color transitions on hover */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* text-align: center; */
+}
+.quick-links ul li a{
+  text-align: center;
+  margin-left: -20px;
+}
+
+.footer-section ul li a:hover {
+  color: #6c5ce7;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1100px) {
+  .quick-links {
+    display: none;
+  }
+
+  .footer-section h3{
+
+    /* margin-left: -60px; */
+    /* transform: translateX(-60px); */
+    text-align: left;
+    text-indent: 110px;
+    /* color: aqua; */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quick-links {
+    display: block;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+
+
+
+  .footer-section p {
+    justify-content: center;
+  }
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: flex;
     padding-right: 10px;
   }
-  
+
   .logo {
     padding-left: 10px;
+  }
+
+  .footer-section h3{
+
+    /* margin-left: -60px; */
+    /* transform: translateX(-60px); */
+    text-align: center;
+    text-indent: -10px;
+    /* color: aqua; */
   }
 
   .nav-item {
@@ -273,7 +468,7 @@ footer {
   .component-content {
     grid-template-columns: 1fr;
   }
-  
+
   .component-title {
     font-size: 2rem;
   }
@@ -283,6 +478,9 @@ footer {
   .nav-item {
     margin-left: 0.5rem;
   }
+
+  
+
 
   .logo {
     font-size: 1.2rem;
@@ -294,7 +492,8 @@ footer {
 }
 
 /* Additional Styles */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
