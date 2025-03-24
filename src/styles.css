@@ -26,7 +26,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
 }
