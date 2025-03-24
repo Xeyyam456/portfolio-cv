@@ -57,7 +57,7 @@ const Projects = () => {
     return (
         <section id="projects" className='projects'>
             <h2>My Projects</h2>
-            <div className="projects-grid">
+            <div className="projects-grid">             
                 {projects.map((project, index) => (
                     <div className="project-card" key={index} style={{ height: '450px' }}>
                         <img src={project.image} alt={project.title} className="project-image" />

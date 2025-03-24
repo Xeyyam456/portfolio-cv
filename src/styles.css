@@ -969,7 +969,6 @@ html {
 
 .project-card:hover .project-image {
   transform: scale(1.05);
-  filter: brightness(1.1) contrast(1.1);
 }
 
 .project-content {
@@ -1171,7 +1170,6 @@ html {
 
 .project-card:hover .project-image {
   transform: scale(1.05);
-  filter: brightness(1.1) contrast(1.1);
 }
 
 .project-content {
