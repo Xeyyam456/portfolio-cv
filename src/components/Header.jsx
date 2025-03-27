@@ -16,7 +16,7 @@ const Header = () => {
             setText(currentPhrase.substring(0, text.length + (isDeleting ? -1 : 1)));
             
             if (!isDeleting && text === currentPhrase) {
-                setTimeout(() => setIsDeleting(true), 2000);
+                setTimeout(() => setIsDeleting(true), 1500);
             } else if (isDeleting && text === '') {
                 setIsDeleting(false);
                 setPhraseIndex((phraseIndex + 1) % phrases.length);

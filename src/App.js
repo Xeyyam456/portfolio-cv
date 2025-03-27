@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
@@ -10,14 +11,16 @@ import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navbar />
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
