@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Bağımlılıklar
+
+Bu proje aşağıdaki bağımlılıkları kullanmaktadır:
+
+- **@fortawesome/fontawesome-svg-core**: ^6.7.2
+- **@fortawesome/free-solid-svg-icons**: ^6.7.2
+- **@fortawesome/react-fontawesome**: ^0.2.2
+- **@testing-library/dom**: ^10.4.0
+- **@testing-library/jest-dom**: ^6.6.3
+- **@testing-library/react**: ^16.2.0
+- **@testing-library/user-event**: ^13.5.0
+- **html2pdf.js**: ^0.10.3
+- **react**: ^19.0.0
+- **react-dom**: ^19.0.0
+- **react-router-dom**: ^7.4.0
+- **react-scripts**: 5.0.1
+- **sweetalert2**: ^11.17.2
+- **web-vitals**: ^2.1.4
