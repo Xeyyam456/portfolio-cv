@@ -13,18 +13,7 @@ const About = () => {
         { name: 'ASP.NET Core', level: 70 } // New skill added
     ];
 
-    const handleDownloadCV = () => {
-        // CV dosyasının URL'si (public klasöründe olduğunu varsayıyorum)
-        const cvUrl = process.env.PUBLIC_URL + '/cv.pdf';
-        
-        // Yeni bir link elementi oluştur
-        const link = document.createElement('a');
-        link.href = cvUrl;
-        link.download = 'my-cv.pdf'; // İndirilecek dosyanın adı
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    
 
     const generatePDF = () => {
         const content = document.querySelector('#root');
