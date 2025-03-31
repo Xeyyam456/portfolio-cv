@@ -81,7 +81,7 @@ const About = () => {
                             className="download-cv-btn"
                             style={{
                                 padding: '12px 24px',
-                                width: '520px',
+                                width: '100%',
                                 height: '50px',
                                 background: 'linear-gradient(45deg, #6c5ce7, #5a4bd1)',
                                 color: 'white',
