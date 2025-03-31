@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import '../../src/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const { darkMode, toggleTheme } = useTheme();
@@ -41,12 +43,12 @@ const Navbar = () => {
               style={{
                 background: 'none',
                 border: 'none',
-                color: '#fff',
+                color: darkMode ? '#fff' : '#000',
                 cursor: 'pointer',
                 fontSize: '1.2rem'
               }}
             >
-              {darkMode ? '☀️' : '🌙'}
+              {darkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />} 
             </button>
           </li>
         </ul>

@@ -9,7 +9,8 @@ const About = () => {
         { name: 'JavaScript', level: 80 },
         { name: 'React', level: 75 },
         { name: 'Node.js', level: 70 },
-        { name: 'UI/UX Design', level: 80 }
+        { name: 'UI/UX Design', level: 80 },
+        { name: 'ASP.NET Core', level: 70 } // New skill added
     ];
 
     const handleDownloadCV = () => {

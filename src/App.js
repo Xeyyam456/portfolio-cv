@@ -14,7 +14,11 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <Navbar />
-        <Header />
+        <div className="main-container">
+          <div className="header-container">
+            <Header />
+          </div>
+        </div>
         <About />
         <Projects />
         <Contact />

@@ -23,7 +23,7 @@ const Projects = () => {
             title: "Task Management App",
             description: "A beautiful and intuitive task management application with real-time updates.",
             image: "https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg",
-            tech: ["React", "Firebase", "Material-UI"],
+            tech: ["React", "Firebase","Node.js", "Material-UI"],
             liveLink: "https://project2.com",
             githubLink: "https://github.com/yourusername/project2"
         },
@@ -31,11 +31,26 @@ const Projects = () => {
             title: "Weather Dashboard",
             description: "A modern weather dashboard showing real-time weather data and forecasts.",
             image: "https://img.freepik.com/free-vector/weather-concept-illustration_114360-1234.jpg",
-            tech: ["JavaScript", "Weather API", "CSS3"],
+            tech: ["JavaScript","Node.js", "Weather API", "CSS3"],
+            liveLink: "https://project3.com",
+            githubLink: "https://github.com/yourusername/project3"
+        },    {
+            title: "Weather Dashboard",
+            description: "A modern weather dashboard showing real-time weather data and forecasts.",
+            image: "https://img.freepik.com/free-vector/weather-concept-illustration_114360-1234.jpg",
+            tech: ["JavaScript", "Node.js","Firebase", "CSS3"],
             liveLink: "https://project3.com",
             githubLink: "https://github.com/yourusername/project3"
         },
         
+        {
+            title: "Fitness Tracking App",
+            description: "A comprehensive fitness tracking application with workout plans and progress monitoring.",
+            image: "https://img.freepik.com/free-vector/fitness-tracker-concept-illustration_114360-4522.jpg",
+            tech: ["React Native", "Redux", "Node.js", "MongoDB"],
+            liveLink: "https://project5.com",
+            githubLink: "https://github.com/yourusername/project5"
+        },
         {
             title: "Fitness Tracking App",
             description: "A comprehensive fitness tracking application with workout plans and progress monitoring.",
